@@ -1,0 +1,38 @@
+#data {
+    padding-top: 200px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    flex: 1;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.newsBox {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: .5px solid blue;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+    #data {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsBox {
+        width: 40%;
+    }
+}
+
+@media (max-width: 540px) {
+    .newsBox {
+        width: 80%;
+    }

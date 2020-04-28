@@ -10,22 +10,18 @@
 </head>
 <body>
     
-    <div class="main">
-        <div class="dropdown">
-           <select id="category" class="input-boxes">
-                <option value="all">All</option>
-                <option value="businnss">Business</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="health">Health</option>
-                <option value="science">Science</option>
-                <option value="sports">Sports</option>
-                <option value="technology">Technology</option>
-           </select> 
-
+    <div class="container">
+		<div class="categories">
+			<button id="all" onclick="all">All</button>
+			<button id="businnss" onclick="writeToDocument('category=business&')">Business</button>
+			<button id="entertainment" onclick="writeToDocument('category=entertainment&')">Entertainment</button>
+			<button id="health" onclick="writeToDocument('category=health&')">Health</button>
+			<button id="science" onclick="writeToDocument('category=science&')">Science</button>
+			<button id="sports" onclick="writeToDocument('category=sports&')">Sports</button>
+			<button id="technology" onclick="writeToDocument('category=technology&')">Technology</button>
             <div id="data"></div>
-        </div>
-    </div>
-
+		</div>
+	</div>
 
 
     
